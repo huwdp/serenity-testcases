@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<style>
+    #a {
+        background: green;
+        cursor: pointer;
+    }
+    #a:hover {
+        background: red;
+    }
+
+    #b {
+        background: green;
+        pointer-events: none;
+    }
+    #b:hover {
+        background: red;
+    }
+
+    #c {
+        background: green;
+        pointer-events: none;
+    }
+    #c:active {
+        background: red;
+    }
+
+    #d {
+        background: green;
+        pointer-events: none;
+    }
+    #d:focus {
+        background: red;
+    }
+    
+</style>
+</head>
+<body>
+    <p id="a">This paragraph background should change. Cursor should be "pointer" here.</p>
+    <p id="b">This paragraph background should not change when hovering over this.</p>
+    <p id="c">This paragraph background should not change when clicking this.</p>
+    <p id="d">This paragraph background should not change when clicking this.</p>
+</body>
+</html>

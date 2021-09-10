@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<style>
+    #floating_div {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 200px;
+        height: 200px;
+        background: rgba(255, 0, 0, 0.5);
+        pointer-events: none;
+    }
+</style>
+</head>
+<body>
+    <iframe width="200px" height="200px" src="https://serenityos.org/"></iframe>
+    <div id="floating_div">
+    </div>
+    <p>Ensure that you cannot click on iframe when floating div is on-top.</p>
+    </body>
+</html>
