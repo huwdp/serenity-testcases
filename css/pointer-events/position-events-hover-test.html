@@ -4,7 +4,7 @@
 <style>
     #a {
         background: green;
-        cursor: pointer;
+        pointer-events: auto;
     }
     #a:hover {
         background: red;
@@ -16,6 +16,7 @@
     }
     #b:hover {
         background: red;
+        color: blue;
     }
 
     #c {
@@ -33,13 +34,22 @@
     #d:focus {
         background: red;
     }
+
+    #e {
+        background: green;
+    }
+    #e:hover {
+        background: red;
+    }
     
 </style>
 </head>
 <body>
-    <p id="a">This paragraph background should change. Cursor should be "pointer" here.</p>
-    <p id="b">This paragraph background should not change when hovering over this.</p>
-    <p id="c">This paragraph background should not change when clicking this.</p>
-    <p id="d">This paragraph background should not change when clicking this.</p>
+    
+    <p id="a"><a href="https://google.com">This paragraph background should change. Cursor should be "pointer" here.</a></p>
+    <p id="b"><a href="https://google.com">This paragraph background should not change when hovering over this.</a></p>
+    <p id="c"><a href="https://google.com">This paragraph background should not change when clicking this.</a></p>
+    <p id="d"><a href="https://google.com">This paragraph background should not change when clicking this.</a></p>
+    <p id="e"><a href="https://google.com">This paragraph background should change. Cursor should be "pointer" here.</a></p>
 </body>
 </html>
